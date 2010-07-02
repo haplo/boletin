@@ -1,0 +1,10 @@
+PYTHONPATH=/var/www/your_project/
+DJANGO_SETTINGS_MODULE=projectname.settings
+
+# Daily newsletters, every day at 2:05am
+5 2 * * *    root  /var/www/your_project/manage.py createnewsletter --daily
+# Weekly newsletters, every monday at 3:05am
+5 3 * * Mon  root  /var/www/your_project/manage.py createnewsletter --weekly
+# Monthly newsletters, first day of the month at 4:05am
+5 4 1 * *    root  /var/www/your_project/manage.py createnewsletter --monthly
+

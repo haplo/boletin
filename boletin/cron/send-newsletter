@@ -1,0 +1,10 @@
+PYTHONPATH=/var/www/your_project/
+DJANGO_SETTINGS_MODULE=projectname.settings
+
+# Daily newsletters, every day at 3:10am
+10 3 * * *    root  /var/www/your_project/manage.py sendnewsletter --force-unreviewed
+# Weekly newsletters, every monday at 4:10am
+10 4 * * Mon  root  /var/www/your_project/manage.py sendnewsletter --force-unreviewed
+# Monthly newsletters, first day of the month at 5:10am
+10 5 1 * *    root  /var/www/your_project/manage.py sendnewsletter --force-unreviewed
+

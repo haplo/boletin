@@ -1,0 +1,13 @@
+{% extends "boletin/newsletter_base.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Confirmation email sent successfully"  %}{% endblock %}
+
+{% block content %}
+<div id="newsletter-success">
+    <h1>{% trans "Subscription confirmation email sent successfully" %}</h1>
+
+    <p>{% blocktrans %}The confirmation email has been sent successfully to {{ email }}. Follow the instructions in it to complete your subscription.{% endblocktrans %}</p>
+</div>
+{% endblock %}

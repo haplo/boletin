@@ -1,0 +1,12 @@
+Changes
+=======
+
+0.5.1 (2009-05-20)
+------------------
+- Fixed several bugs that rendered the application unusable. They all came from
+the fact that the application changed name just before release, and some imports
+were left unchanged.
+
+0.5.0 (2009-05-18)
+------------------
+- Initial release

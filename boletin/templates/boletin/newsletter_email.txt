@@ -1,0 +1,19 @@
+{% load stringfilters %}
+{{ site.name }}: Newsletter #{{ number }} ({{ from|date:"Y/m/d" }}-{{to|date:"Y/m/d"}})
+
+{% if objects %}
+Objects
+=======
+{% for obj in objects %}
+{{ obj|wordwrap:69 }} ({{ obj.creation_date|date:"Y/m/d" }}){% if obj.body %}
+{{ obj.body|truncatewords_html:25|striptags|entity2unicode|wordwrap:80 }}{% endif %}
+Enlace: http://{{ site.domain }}{{ obj.get_absolute_url }}
+{% endfor %}
+
+{% endif %}
+
+
+This email has been generated automatically, do not respond it.
+
+You can cancel your subscription at:
+http://{{ site.domain}}{% url boletin.views.newsletter_subscription %}

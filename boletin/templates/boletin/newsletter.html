@@ -1,0 +1,23 @@
+{% extends "boletin/newsletter_base.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super }} - {% trans "Subscription" %}{% endblock %}
+
+{% block content %}
+<div id="newsletter-form" class="form_div">
+    <h1>{% trans "Subscription to newsletter" %}</h1>
+
+    <p>{% blocktrans %}Subscribe to our newsletter to receive information about new content.{% endblocktrans %}</p>
+
+    <p>{% trans "You can receive the newsletter daily, weekly or monthly." %}</p>
+
+    <p>{% trans "To subscribe enter the email where you want to receive the newsletter. We'll send you a confirmation email." %}</p>
+
+    <form action="." method="post">
+        {{ form.as_p }}
+        <input type="submit" value="{% trans 'Submit' %}" />
+    </form>
+
+</div>
+{% endblock %}

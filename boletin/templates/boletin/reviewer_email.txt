@@ -1,0 +1,4 @@
+There's a new newsletter, numbered #{{ newsletter.number }}, awaiting for revision.
+Please login into the admin section to review it:
+
+http://{{ site.domain }}{{ newsletter_url }}{{ newsletter.id }}

@@ -1,0 +1,14 @@
+Hello,
+
+Thanks for subscribing to the newsletter of {{ site.name }}.
+
+To confirm your subscription please enter the following address
+in your web browser:
+
+http://{{ site.domain }}{% url boletin.views.newsletter_subscription_confirm key=key %}
+
+If clicking on the link doesn't work, try copying and pasting it
+into your web browser.
+
+If you don't wish to subscribe, or you haven't asked for this subscription,
+just ignore this message, you won't be notified again.

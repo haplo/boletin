@@ -1,0 +1,14 @@
+Hello,
+
+You have requested to unsubscribe for the newsletter of {{ site.name }}.
+
+To confirm your unsubscription please enter the following address
+in your web browser:
+
+http://{{ site.domain }}{% url boletin.views.newsletter_unsubscription_confirm key=key %}
+
+If clicking on the link doesn't work, try copying and pasting it
+into your web browser.
+
+If you don't wish to unsubscribe, or you haven't asked for this unsubscription,
+just ignore this message.
