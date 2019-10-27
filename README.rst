@@ -1,8 +1,10 @@
 .. contents::
 
-================================
-Boletin, a Django newsletter app
-================================
+=============================================
+Boletin, a Django newsletter app (deprecated)
+=============================================
+
+**Boletin is DEPRECATED, it hasn't been updated in a long time and is not expected to currently work**.
 
 Boletin is a generic newsletter application for Django projects, which allows
 for automatically generating and sending newsletters, with optional human
